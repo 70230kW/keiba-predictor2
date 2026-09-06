@@ -1,0 +1,26 @@
+{
+  "features": [
+    "distance_m",
+    "carried_weight",
+    "age",
+    "prior_starts",
+    "prior_win_rate",
+    "prior_mean_finish",
+    "days_since_last"
+  ],
+  "metadata": [
+    "race_date",
+    "race_id",
+    "horse_id",
+    "finished_first"
+  ],
+  "raw": [
+    "race_date",
+    "race_id",
+    "horse_id",
+    "distance_m",
+    "carried_weight",
+    "age",
+    "finish_position"
+  ]
+}

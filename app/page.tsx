@@ -3,10 +3,10 @@ const maxProbability=Math.max(...predictions.map((horse)=>horse.winProbability))
 
 export default function Home(){
  return <main>
-  <header className="topbar"><a className="brand" href="#top" aria-label="KEIBA LAB ホーム"><span className="brandMark">K</span><span>KEIBA LAB</span></a><div className="modelState"><span/>客観データモデル稼働中</div></header>
+  <header className="topbar"><a className="brand" href="#top" aria-label="KEIBA LAB ホーム"><span className="brandMark">K</span><span>KEIBA LAB</span></a><div className="modelState"><span/>DEMO / 未学習</div></header>
   <section className="workspace" id="top">
-   <div className="raceHeader"><div><p className="eyebrow">本日のAI予測</p><h1>{race.venue} {race.number}R <span>{race.name}</span></h1><p className="raceMeta">{race.condition}　{race.course}　馬場：{race.going}</p></div><div className="startTime"><span>発走</span><strong>{race.startAt}</strong></div></div>
-   <div className="principle"><span className="shield" aria-hidden="true">✓</span><div><strong>市場評価から独立した予測</strong><p>オッズ・人気・投票割合・予想印は、モデル入力に使用していません。</p></div><code>{race.modelVersion}</code></div>
+   <div className="raceHeader"><div><p className="eyebrow">RACE ANALYSIS / 架空レース</p><h1>{race.venue} {race.number}R <span>{race.name}</span></h1><p className="raceMeta">{race.condition}　{race.course}　馬場：{race.going}</p></div><div className="startTime"><span>発走</span><strong>{race.startAt}</strong></div></div>
+   <div className="principle"><span className="shield" aria-hidden="true">✓</span><div><strong>市場評価から独立した予測</strong><p>オッズ・人気・投票割合・予想印は、モデル入力に使用していません。</p></div><code>デモ表示・未学習</code></div>
    <div className="contentGrid">
     <section className="ranking" aria-labelledby="ranking-title">
      <div className="sectionTitle"><div><p>MODEL RANKING</p><h2 id="ranking-title">勝率ランキング</h2></div><span>上位5頭</span></div>
@@ -26,6 +26,7 @@ export default function Home(){
      <dl className="dataPolicy"><div><dt>使用データ</dt><dd>戦績・タイム・条件・騎手・血統</dd></div><div><dt>除外データ</dt><dd>オッズ・人気・投票行動・予想印</dd></div></dl>
     </aside>
    </div>
+   <details className="dataFoundation"><summary>実データの取り込み準備</summary><div className="details"><p>共通CSVを検査し、過去の戦績から学習用データを作成できます。データ提供元への接続とモデル学習は未実施です。</p><p>CSVはこの画面では送信・保存しません。取得元の利用条件を確認して、開発環境で取り込んでください。</p><a href="/templates/results.csv" download>CSVひな形をダウンロード</a></div></details>
    <p className="disclaimer">表示データは画面開発用のサンプルです。予測は的中や利益を保証するものではありません。</p>
   </section>
  </main>
