@@ -1,0 +1,10 @@
+{
+  "provider": "netkeiba",
+  "status": "permission_required",
+  "checked_at": "2026-09-07",
+  "network_ingestion_enabled": false,
+  "credentials_accepted": false,
+  "allowed_input": ["provider-authorized API or export transformed offline"],
+  "blocked_input": ["HTML scraping", "login automation", "odds", "popularity", "bet share", "tip marks", "SNS ratings"],
+  "policy": "../../docs/netkeiba-source.md"
+}
