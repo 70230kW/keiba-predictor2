@@ -23,10 +23,10 @@ export default function Home(){
      <div className="pickHero"><div className="bigNumber">{predictions[0].number}</div><div><span>AI総合1位</span><h3>{predictions[0].name}</h3></div></div>
      <div className="scoreGrid"><Score label="近走能力" value={predictions[0].fitness}/><Score label="コース適性" value={predictions[0].courseFit}/><Score label="展開適性" value={predictions[0].paceFit}/></div>
      <div className="reason"><span>分析メモ</span><p>{predictions[0].note}</p></div>
-     <dl className="dataPolicy"><div><dt>使用データ</dt><dd>戦績・タイム・条件・騎手・血統</dd></div><div><dt>除外データ</dt><dd>オッズ・人気・投票行動・予想印</dd></div></dl>
+     <dl className="dataPolicy"><div><dt>取得元</dt><dd>JRA-VAN Data Lab.（接続準備中）</dd></div><div><dt>使用データ</dt><dd>戦績・タイム・条件・騎手・血統</dd></div><div><dt>除外データ</dt><dd>オッズ・人気・投票行動・予想印</dd></div></dl>
     </aside>
    </div>
-   <details className="dataFoundation"><summary>実データの取り込み準備</summary><div className="details"><p>共通CSVを検査し、過去の戦績から学習用データを作成できます。データ提供元への接続とモデル学習は未実施です。</p><p>CSVはこの画面では送信・保存しません。取得元の利用条件を確認して、開発環境で取り込んでください。</p><a href="/templates/results.csv" download>CSVひな形をダウンロード</a></div></details>
+   <details className="dataFoundation"><summary>JRA-VAN接続の準備状況</summary><div className="details"><p>取得元はJRA-VAN Data Lab.に決定しました。Windows上のJV-Linkから共通形式へ変換し、予測結果だけをVercelへ渡す構成です。</p><p>現在は接続クライアントの設計段階で、実データ取得とモデル学習はまだ行っていません。</p><a href="/templates/results.csv" download>共通CSVひな形を確認</a></div></details>
    <p className="disclaimer">表示データは画面開発用のサンプルです。予測は的中や利益を保証するものではありません。</p>
   </section>
  </main>

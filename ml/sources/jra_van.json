@@ -1,0 +1,11 @@
+{
+  "provider": "JRA-VAN Data Lab.",
+  "status": "selected_not_connected",
+  "interface": "JV-Link",
+  "collector_runtime": "Windows",
+  "vercel_direct_access": false,
+  "credentials_in_repository": false,
+  "market_features_enabled": false,
+  "common_output": "../../public/templates/results.csv",
+  "architecture": "../../docs/jra-van-source.md"
+}

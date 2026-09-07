@@ -1,6 +1,6 @@
 {
   "provider": "netkeiba",
-  "status": "permission_required",
+  "status": "not_selected",
   "checked_at": "2026-09-07",
   "network_ingestion_enabled": false,
   "credentials_accepted": false,
