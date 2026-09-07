@@ -20,3 +20,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest ml.test_pipeline
+      - run: python -m unittest collector.windows.test_preflight
